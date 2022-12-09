@@ -1,0 +1,117 @@
+{
+  "name": "inventario-app",
+  "version": "1.0.1",
+  "description": "Inventario App",
+  "private": true,
+  "dependencies": {
+    "@fdograph/rut-utilities": "^1.2.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "availity-reactstrap-validation": "^2.6.1",
+    "axios": "^0.21.0",
+    "chart.js": "^2.9.4",
+    "classnames": "2.2.6",
+    "date-fns": "^2.19.0",
+    "filepond": "^4.25.1",
+    "filepond-plugin-image-exif-orientation": "^1.0.9",
+    "filepond-plugin-image-preview": "^4.6.4",
+    "filepond-plugin-image-resize": "^2.0.10",
+    "filepond-plugin-image-transform": "^3.8.7",
+    "formik": "^2.2.1",
+    "jwt-decode": "^3.1.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "mousetrap": "^1.6.5",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "rc-switch": "^3.2.2",
+    "react": "^17.0.1",
+    "react-albus": "^2.0.0",
+    "react-big-calendar": "^0.28.1",
+    "react-circular-progressbar": "^2.0.3",
+    "react-contextmenu": "^2.14.0",
+    "react-datepicker": "^3.3.0",
+    "react-dom": "^17.0.1",
+    "react-filepond": "^7.1.0",
+    "react-image-file-resizer": "^0.4.8",
+    "react-image-lightbox": "^5.1.1",
+    "react-intl": "^5.8.8",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.4",
+    "react-select": "^3.1.0",
+    "react-table": "^7.6.1",
+    "react-tagsinput": "^3.19.0",
+    "react-transition-group": "^4.4.1",
+    "reactstrap": "^8.6.0",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "swr": "^1.3.0",
+    "video.js": "7.8.3",
+    "web-vitals": "^0.2.4",
+    "workbox-background-sync": "^5.1.3",
+    "workbox-broadcast-update": "^5.1.3",
+    "workbox-cacheable-response": "^5.1.3",
+    "workbox-core": "^5.1.3",
+    "workbox-expiration": "^5.1.3",
+    "workbox-google-analytics": "^5.1.3",
+    "workbox-navigation-preload": "^5.1.3",
+    "workbox-precaching": "^5.1.3",
+    "workbox-range-requests": "^5.1.3",
+    "workbox-routing": "^5.1.3",
+    "workbox-strategies": "^5.1.3",
+    "workbox-streams": "^5.1.3",
+    "yup": "^0.29.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "precommit": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.0",
+    "prettier": "^2.1.2"
+  }
+}
